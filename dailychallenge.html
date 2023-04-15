@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let sentence=prompt("taper une chaine ")
+       let patt = /not/i  ;
+       let m=/bad/i;
+       let result = sentence.match(patt,m);
+       console.log(result); //returns true
+
+    if (result){
+        console.log('Yes')
+    } else{
+        console.log('No');
+    }
+
+
+    let wordNot=console.log(sentence.indexOf(`not`))
+    let wordBad=console.log(sentence.indexOf(`bad`))
+    
+    
+
+    if(sentence.indexOf(`not`)<sentence.indexOf(`bad`)){
+        b=sentence.replace("not that bad","good")
+        console.log(b)
+          
+    }
+    if(sentence.indexOf(`not`)>sentence.indexOf(`bad`)){
+        console.log(b)
+    }
+    
+    
+
+
+    </script>
+</body>
+</html>
